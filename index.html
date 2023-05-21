@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automoto - Online Parts Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav>
-      <h1>Automoto</h1>
+      <div class="logo">
+        <img src="images/logo.png" alt="Automoto Logo">
+        <h1>Automoto</h1>
+      </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="cart.html">Cart</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -18,15 +23,58 @@
   </header>
 
   <section class="hero">
-    <h2>Welcome to Automoto</h2>
-    <p>Your one-stop destination for car and motorcycle parts</p>
-    <a href="products.html" class="btn">Shop Now</a>
+    <div class="hero-content">
+      <h2>Welcome to Automoto</h2>
+      <p>Your one-stop destination for car and motorcycle parts</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
   </section>
 
-  <!-- Add more sections and content as needed -->
+  <section class="featured-products">
+    <h3>Featured Products</h3>
+    <div class="product">
+      <img src="images/product1.jpg" alt="Product 1">
+      <h4>Car Part 1</h4>
+      <p>Description of Car Part 1</p>
+      <button class="btn-add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product2.jpg" alt="Product 2">
+      <h4>Motorcycle Part 2</h4>
+      <p>Description of Motorcycle Part 2</p>
+      <button class="btn-add-to-cart">Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+  </section>
+
+  <section class="ads">
+    <div class="ad">
+      <img src="images/ad1.jpg" alt="Ad 1">
+      <div class="ad-content">
+        <h4>Special Offer</h4>
+        <p>Get 10% off on all car parts!</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="ad">
+      <img src="images/ad2.jpg" alt="Ad 2">
+      <div class="ad-content">
+        <h4>Motorcycle Clearance Sale</h4>
+        <p>Save up to 50% on selected motorcycle parts!</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2023 Automoto. All rights reserved.</p>
+    <div class="footer-content">
+      <p>&copy; 2023 Automoto. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
